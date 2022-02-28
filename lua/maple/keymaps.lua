@@ -86,11 +86,11 @@ keymap("v", "<leader>p", '"+p', opts)
 keymap("v", "<leader>P", '"+P', opts)
 
 -- Save --
-keymap("n", "<A-s>", ":w<CR>", opts)
-keymap("i", "<A-s>", "<ESC>:w<CR>", opts)
+keymap("n", "<C-s>", ":w<CR>", opts)
+keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
 
 -- Quit --
-keymap("n", "<A-q>", ":q<CR>", opts)
-keymap("n", "<AS-q>", ":q!<CR>", opts)
-keymap("i", "<A-q>", "<ESC>:q<CR>", opts)
-keymap("i", "<AS-q>", "<ESC>:q!<CR>", opts)
+keymap("n", "<C-q>", ":q<CR>", opts)
+keymap("n", "<CS-q>", ":q!<CR>", opts)
+keymap("i", "<C-q>", "<ESC>:q<CR>", opts)
+keymap("i", "<CS-q>", "<ESC>:q!<CR>", opts)
