@@ -1,7 +1,7 @@
 vim.cmd "colorscheme default"
 
---local colourscheme = "PaperColor"
-local colourscheme = "spacedark"
+local colourscheme = "PaperColor"
+--local colourscheme = "spacedark"
 --local colourscheme = "darkplus"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colourscheme)
