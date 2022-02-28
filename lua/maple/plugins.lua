@@ -47,6 +47,8 @@ return packer.startup(function(use)
   use "9mm/vim-closer"
   use "windwp/nvim-autopairs" -- Autopairs brackets
   use "numToStr/Comment.nvim" -- Easily comment code
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
   
   -- Colour schemes
   use "NLKNguyen/papercolor-theme"
@@ -68,6 +70,9 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
 
   -- Treesitter
   use {
