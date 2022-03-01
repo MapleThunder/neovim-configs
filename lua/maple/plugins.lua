@@ -49,6 +49,8 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment code
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
   
   -- Colour schemes
   use "NLKNguyen/papercolor-theme"
@@ -62,6 +64,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" --  cmdline completions
   use "saadparwaiz1/cmp_luasnip"  --  snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+  use "nvim-lualine/lualine.nvim"
 
   -- Snippets
   use "L3MON4D3/LuaSnip"  --  snippet engine
