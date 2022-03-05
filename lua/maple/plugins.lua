@@ -44,18 +44,18 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "9mm/vim-closer"
   use "windwp/nvim-autopairs" -- Autopairs brackets
   use "numToStr/Comment.nvim" -- Easily comment code
-  use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
+  use "nvim-lualine/lualine.nvim"
+  use "glepnir/dashboard-nvim"
   
   -- Colour schemes
   use "NLKNguyen/papercolor-theme"
-  use "lunarvim/colorschemes"
-  use "folke/tokyonight.nvim"
+  use 'kyazdani42/nvim-web-devicons'
+  use "onsails/lspkind-nvim"
 
   -- Completion plugins
   use "hrsh7th/nvim-cmp"  --  The completion plugin
@@ -64,8 +64,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" --  cmdline completions
   use "saadparwaiz1/cmp_luasnip"  --  snippet completions
   use "hrsh7th/cmp-nvim-lsp"
-  use "nvim-lualine/lualine.nvim"
-  use "glepnir/dashboard-nvim"
 
   -- Snippets
   use "L3MON4D3/LuaSnip"  --  snippet engine
@@ -74,6 +72,7 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "lukas-reineke/lsp-format.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -86,7 +85,7 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "p00f/nvim-ts-rainbow"
   
-  -- Git
+  -- Version Control 
   use "lewis6991/gitsigns.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim

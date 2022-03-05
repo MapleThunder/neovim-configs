@@ -63,6 +63,7 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
+keymap("n", "<leader>t", ":sp<bar>term<cr><c-w>J:resize10<cr>", opts)
 -- Better terminal navigation
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
@@ -70,23 +71,15 @@ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Copy to clipboard
---vnoremap  <leader>y  "+y
 keymap("v", "<leader>y", '"+y', opts)
---nnoremap  <leader>Y  "+yg_
 keymap("n", "<leader>Y", '"+yg_', opts)
---nnoremap  <leader>y  "+y
 keymap("n", "<leader>y", '"+y', opts)
---nnoremap  <leader>yy  "+yy
 keymap("n", "<leader>yy", '"+yy', opts)
 
 -- Paste from clipboard
---nnoremap <leader>p "+p
 keymap("n", "<leader>p", '"+p', opts)
---nnoremap <leader>P "+P
 keymap("n", "<leader>P", '"+P', opts)
---vnoremap <leader>p "+p
 keymap("v", "<leader>p", '"+p', opts)
--- vnoremap <leader>P "+P
 keymap("v", "<leader>P", '"+P', opts)
 
 -- Save --
